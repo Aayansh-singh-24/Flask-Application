@@ -1,0 +1,93 @@
+{% extends "base.html" %}
+
+{% block title %}Submit Your Data{% endblock %}
+
+{% block content %}
+  <div class="row justify-content-center">
+    <div class="col-xl-8 col-lg-9 col-md-10 col-12">
+      <div class="card shadow-sm border-0 app-card">
+        <div class="card-body p-4 p-md-5">
+          <div class="text-center mb-4">
+            <div class="form-icon mb-3">
+              <span class="icon-circle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 24 24">
+                  <path
+                    d="M4 5c0-1.1.9-2 2-2h12c1.1 0 2 .9 2 2v2.5c0 .8-.5 1.5-1.2 1.8L13 12.5l-7.8-3.2C4.5 9 4 8.3 4 7.5V5Z"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="m13 12.5 6.4-2.7c.4-.2.6-.6.6-1V15c0 .8-.5 1.5-1.2 1.8L13 19.5l-7.8-3.2C4.5 16 4 15.3 4 14.5V8.8c0 .4.2.8.6 1L13 12.5Z"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </span>
+            </div>
+            <h1 class="h4 mb-2">Store your details safely</h1>
+            <p class="text-muted small mb-0">
+              Enter your information below and it will be stored securely in the configured database.
+            </p>
+          </div>
+
+          <form method="post" novalidate>
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input
+                type="text"
+                class="form-control form-control-lg"
+                id="name"
+                name="name"
+                placeholder="John Doe"
+                autocomplete="name"
+                required
+              />
+              <div class="form-text">Use your full name so you can recognize this entry later.</div>
+            </div>
+
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input
+                type="email"
+                class="form-control form-control-lg"
+                id="email"
+                name="email"
+                placeholder="john@example.com"
+                autocomplete="email"
+                required
+              />
+              <div class="form-text">We’ll only use this for identifying your submission.</div>
+            </div>
+
+            <div class="mb-4">
+              <label for="message" class="form-label">Message</label>
+              <textarea
+                class="form-control"
+                id="message"
+                name="message"
+                rows="4"
+                placeholder="Write something..."
+                required
+              ></textarea>
+              <div class="form-text">You can add any notes or comments here.</div>
+            </div>
+
+            <div class="d-grid gap-2">
+              <button type="submit" class="btn btn-primary btn-lg">
+                Save to Database
+              </button>
+              <p class="text-muted text-center small mb-0">
+                Your data is stored in your MySQL database behind the scenes.
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+
