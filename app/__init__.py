@@ -12,6 +12,7 @@ def create_app() -> Flask:
     Application factory that configures Flask for different environments
     (development vs production) based on environment variables.
     """
+    
     # Load environment variables from .env (for local/dev)
     load_dotenv()
 
