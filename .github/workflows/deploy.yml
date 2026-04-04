@@ -33,6 +33,7 @@ jobs:
       - name: Push Docker Image
         run: docker push ${{ secrets.DOCKER_USERNAME }}/flask-app:latest
 
+
     
       - name: Deploy on EC2
         uses: appleboy/ssh-action@v1.0.3
