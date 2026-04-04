@@ -41,7 +41,7 @@ jobs:
           username: ubuntu
           key: ${{ secrets.EC2_SSH_KEY }} 
           script: |
-            docker pull ${{ secrets.DOCKER_USERNAME }}/flask-app:latest
-            docker stop flask-container || true
-            docker rm flask-container || true
-            docker run -d -p 5000:8000 --name flask-container ${{ secrets.DOCKER_USERNAME }}/flask-app:latest
+            sudo docker pull ${{ secrets.DOCKER_USERNAME }}/flask-app:latest
+            sudo docker stop flask-container || true
+            sudo docker rm flask-container || true
+            sudo docker run -d -p 5000:8000 --name flask-container ${{ secrets.DOCKER_USERNAME }}/flask-app:latest
