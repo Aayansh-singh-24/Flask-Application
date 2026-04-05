@@ -1,4 +1,4 @@
-# 🚀 Flask Application with CI/CD & Docker Deployment
+#  Flask Application with CI/CD & Docker Deployment
 
 A production-style Flask web application deployed using **Docker, GitHub Actions (CI/CD), and AWS EC2**.
 
@@ -8,7 +8,6 @@ This project demonstrates an **automated build, push, and deployment pipeline** 
 
 ## 📌 Features
 
-- 🐍 Flask-based backend application  
 - 🐳 Dockerized application  
 - 🔁 Automated CI/CD pipeline using GitHub Actions  
 - 📦 Docker image pushed to Docker Hub  
@@ -20,7 +19,6 @@ This project demonstrates an **automated build, push, and deployment pipeline** 
 
 ## 🛠️ Tech Stack
 
-- **Backend:** Flask  
 - **Containerization:** Docker  
 - **CI/CD:** GitHub Actions  
 - **Cloud:** AWS EC2  
