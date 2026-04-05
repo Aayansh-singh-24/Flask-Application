@@ -49,3 +49,5 @@ The pipeline is triggered whenever code is pushed to the `main` branch.
 ---
 
 ## 📂 Project Structure
+
+<img width="1536" height="1024" alt="ChatGPT Image Apr 5, 2026, 10_36_13 AM" src="https://github.com/user-attachments/assets/1f156ef9-1cbc-4b25-a0fe-52738b22d76e" />
