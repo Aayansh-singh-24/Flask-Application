@@ -49,14 +49,3 @@ The pipeline is triggered whenever code is pushed to the `main` branch.
 ---
 
 ## 📂 Project Structure
-.
-├── app/
-│   ├── __init__.py
-│   └── routes.py
-├── tests/
-├── Dockerfile
-├── requirements.txt
-├── README.md
-└── .github/
-    └── workflows/
-        └── ci-cd.yml
